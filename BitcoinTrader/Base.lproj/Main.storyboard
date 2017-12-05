@@ -24,14 +24,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="bWa-W0-R5C">
-                                <rect key="frame" x="70.5" y="20" width="234" height="114"/>
+                                <rect key="frame" x="70.5" y="30" width="234" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="Qxh-QH-bsc"/>
                                     <constraint firstAttribute="width" constant="234" id="qcO-hd-ria"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2c-Gp-uLl" userLabel="Bitcoin Price Label">
-                                <rect key="frame" x="16" y="164" width="343" height="63"/>
+                                <rect key="frame" x="16" y="174" width="343" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="11A-kt-yeb"/>
                                     <constraint firstAttribute="width" constant="343" id="Z60-19-Q4f"/>
@@ -41,7 +41,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGm-Cx-GyV" userLabel="Currency Picker">
-                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="440" width="375" height="217"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="Tix-oc-9t0"/>
+                                </constraints>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.070588235294117646" green="0.52941176470588236" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,8 +54,8 @@
                             <constraint firstItem="P2c-Gp-uLl" firstAttribute="top" secondItem="bWa-W0-R5C" secondAttribute="bottom" constant="30" id="UBE-cH-Car"/>
                             <constraint firstItem="bWa-W0-R5C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a0i-Z0-Afh"/>
                             <constraint firstItem="wGm-Cx-GyV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d2n-rr-7u4"/>
-                            <constraint firstItem="wGm-Cx-GyV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eYk-wT-RcQ"/>
-                            <constraint firstItem="bWa-W0-R5C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qsb-ao-qqH"/>
+                            <constraint firstItem="wGm-Cx-GyV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="eYk-wT-RcQ"/>
+                            <constraint firstItem="bWa-W0-R5C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="qsb-ao-qqH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -63,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+            <point key="canvasLocation" x="30" y="30"/>
         </scene>
     </scenes>
     <resources>
