@@ -29,6 +29,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
 
     
+    
     //UIPickerView delegate methods:
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -48,6 +49,17 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     
+    
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        print(currencyArray[row])
+        
+        finalURL = baseURL + currencyArray[row]
+        print(finalURL)
+        
+        
+    }
     
 
 
