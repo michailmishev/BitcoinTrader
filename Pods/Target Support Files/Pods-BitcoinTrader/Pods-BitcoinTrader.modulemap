@@ -1,0 +1,6 @@
+framework module Pods_BitcoinTrader {
+  umbrella header "Pods-BitcoinTrader-umbrella.h"
+
+  export *
+  module * { export * }
+}
