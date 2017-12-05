@@ -61,6 +61,46 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         finalURL = baseURL + currencyArray[row]
         print(finalURL)
         
+        getBitcoinData(url: finalURL)
+        
+    }
+    
+    
+    
+    
+    //Networking:
+    
+    func getBitcoinData(url: String) {
+        
+        Alamofire.request(url, method: .get).responseJSON {
+            response in
+            if response.result.isSuccess {
+                
+                print("Sucess! Got the bitcoin data")
+                let bitcoinJSON: JSON = JSON(response.result.value!)
+                self.updateBitcoinData(json: bitcoinJSON)
+                
+            } else {
+                
+                print("Error: \(String(describing: response.result.error))")
+                self.bitcoinPriceLabel.text = "Contection Issues"
+                
+            }
+        }
+        
+    }
+    
+    
+    
+    func updateBitcoinData(json: JSON) {
+        
+        if let bitcoinResult = json["last"].double {
+            
+            bitcoinPriceLabel.text = "\(bitcoinResult)"
+            
+        } else {
+            bitcoinPriceLabel.text = "Price Unavailable"
+        }
         
     }
     

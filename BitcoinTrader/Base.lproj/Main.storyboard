@@ -30,7 +30,7 @@
                                     <constraint firstAttribute="width" constant="234" id="qcO-hd-ria"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2c-Gp-uLl" userLabel="Bitcoin Price Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2c-Gp-uLl" userLabel="Bitcoin Price Label">
                                 <rect key="frame" x="16" y="164" width="343" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="11A-kt-yeb"/>
